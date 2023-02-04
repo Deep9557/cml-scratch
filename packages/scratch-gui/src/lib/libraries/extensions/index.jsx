@@ -30,6 +30,11 @@ import text2speechInsetIconURL from './text2speech/text2speech-small.svg';
 import translateIconURL from './translate/translate.png';
 import translateInsetIconURL from './translate/translate-small.png';
 
+import googleTMIconURL from './googleTM/GTM.png';
+import googleTMInsetIconURL from './googleTM/GTM.svg';
+
+
+
 import makeymakeyIconURL from './makeymakey/makeymakey.png';
 import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 
@@ -263,6 +268,28 @@ export default [
         ),
         featured: true,
         internetConnectionRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Google Teachable Machine"
+                description="Name for the Google Teachable Machine extension"
+                id="gui.extension.googleTM.name"
+            />
+        ),
+        extensionId: 'googleTM',
+        collaborator: 'Google',
+        iconURL: googleTMIconURL,
+        insetIconURL: googleTMInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="googleTM for images."
+                description="Description for the googleTM extension"
+                id="gui.extension.googleTM.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: false
     },
     /*{
         name: 'Makey Makey',
